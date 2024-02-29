@@ -28,7 +28,7 @@ def load_X_data(X_file_path):
         return df
 
     except Exception as e:
-        print("Error occurred while loading descriptors CSV data:", e)
+        print("Error occurred while loading features CSV data:", e)
         
         
         
@@ -51,7 +51,7 @@ def load_y_data(y_file_path):
         return  df
 
     except Exception as e:
-        print("Error occurred while loading concentrations CSV data:", e)
+        print("Error occurred while loading label CSV data:", e)
         
         
 def feature_importacne(X_file_path, y_file_path, num_feature_to_select):
